@@ -1375,9 +1375,10 @@ if (typeof Object.create !== "function") {
                 }
             }
             base.clearEvents();
+            //word `class` in ie8 must with quotes :D
             base.$elem.attr({
-                style: base.$elem.data("owl-originalStyles") || "",
-                class: base.$elem.data("owl-originalClasses")
+                "style": base.$elem.data("owl-originalStyles") || "",
+                "class": base.$elem.data("owl-originalClasses")
             });
         },
 
